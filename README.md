@@ -19,4 +19,8 @@
 
  3> You will see Multiple Menu Operations available to you , choose according to your need .
 
+ 4> NOTE -> You need to Setup and install gh (github CLI) in order to use this 
+
+Download Link for GithubCLI ->  https://cli.github.com/
+
 

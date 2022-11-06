@@ -225,9 +225,23 @@ echo "1> Private"
 echo "2> Public"
 read visibility
 
+echo "Are you : ?"
+echo "1> Windows User"
+echo "2> Linux User"
+read user
+
 echo "Setup and Login to gh is required for performing this Operation :"
-echo "Logging into gh :"
+echo "Logging into gh ... "
+
+if [ $user == 1 ]
+then
+winpty gh auth login
+
+elif [ $user == 2 ]
+then
 gh auth login
+fi
+
 
 if [ $visibility == 1 ]
 then
@@ -249,7 +263,7 @@ echo "Uploading the Files in the Current Directory to the Repo :"
 git init
 git add .
 git commit -m "initial commit"
-git remote add origin git@github.com:${githubName}/${newRepo}.git
+git remote add origin https://github.com/${githubName}/${newRepo}.git
 git push origin master
 
 
