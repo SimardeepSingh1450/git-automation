@@ -339,7 +339,9 @@ fi
 
 
 esac
+printf "\n"
 
 echo "Thanks for using git-automation script"
 githubUrl=https://github.com/SimardeepSingh1450
+printf "\n"
 echo "Made by -> ${githubUrl}"
