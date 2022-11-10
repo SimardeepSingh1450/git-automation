@@ -9,7 +9,6 @@ echo "3. Create Local Repo or Clone Repo in Current Folder"
 echo "4. Synchronize Changes "
 echo "5. Upload current Folder and create a new Repo / Commit new Changes made to Repo "
 echo "6. Redo Commits "
-echo "7. Dispose Off the shell script from Repo"
 
 
 echo "Select the Option you would like to proceed with :"
@@ -310,32 +309,7 @@ fi
 
 ;;
 
-"7")
 
-echo "You have selected to dispose off the shell from the repo"
-echo "NOTE-> This option is recommended only if you dont need script anymore"
-echo "Would you like to Proceed ?"
-echo "1> Yes"
-echo "2> No"
-
-read option6
-
-if [ $option6 == 1 ]
-then
-rm -rf git-automation.sh
-git init
-git add .
-git commit -m "removed the git-script"
-git push origin master
-echo "New Changes Pushed..."
-
-elif [ $option6 == 2 ]
-then
-echo "Ending the Script..."
-
-fi
-
-;;
 
 
 esac
