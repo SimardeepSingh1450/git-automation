@@ -1,4 +1,4 @@
-#! /bin/bash
+#!/bin/bash
 
 echo "NOTE -> git and gh must be installed to use this"
 echo "Welcome to Git & GitHub Automation :"
